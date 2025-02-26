@@ -1,16 +1,20 @@
+import img1 from '../../images/svg-1.svg';
+import img2 from '../../images/svg-2.svg';
+import img3 from '../../images/svg-3.svg';
+
 export const homeObjOne = {
     primary: true,
     lightBg: false,
     lightTopLine: true,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'Marketing Agency',
-    headline: 'Lead Generation Specialist for Online Businesses',
+    topLine: 'Terapia ABA e Mentoria Profissional',
+    headline: 'Especialista em Autismo, TDAH, Dislexia e ABA',
     description:
-      'We help business owners increase their revenue. Our team of unique specialist can help you achieve your business goals.',
-    buttonLabel: 'Get Started',
+      'Se você é psicopedagogo, neuropsicopedagogo ou atua na área de educação e saúde, nosso curso é para você! Aprenda estratégias de intervenção, técnicas de desenvolvimento cognitivo e emocional, e ferramentas para orientação familiar e trabalho multidisciplinar.',
+    buttonLabel: 'Saber Mais',
     imgStart: '',
-    img: require('../../images/svg-1.svg'),
+    img: img1,
     alt: 'Credit Card',
     start: ''
   };
@@ -21,13 +25,13 @@ export const homeObjOne = {
     lightTopLine: true,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'Instant Setup',
-    headline: 'Extremely quick onboarding process',
+    topLine: 'Início imediato',
+    headline: 'Processo de inscrição rápido e prático',
     description:
-      "Once you've joined, our team of specialist will reach out to you and get you set up in minutes.",
-    buttonLabel: 'Learn More',
+      "Após se inscrever, nossa equipe de especialistas entrará em contato com você para confirmar sua matrícula e fornecer todo o suporte necessário. Em poucos minutos, você terá acesso ao curso e poderá começar a transformar sua carreira!",
+    buttonLabel: 'Quero me inscrever agora!',
     imgStart: '',
-    img: require('../../images/svg-2.svg'),
+    img: img2,
     alt: 'Vault',
     start: ''
   };
@@ -40,9 +44,9 @@ export const homeObjOne = {
     lightTextDesc: false,
     topLine: 'Sarah Jeni',
     headline:
-      'Ultra helped me increase my revenue by over 3X in less than 3 months!',
+      'O curso de Terapia ABA e Mentoria Profissional me ajudou a ampliar meus conhecimentos e impactar mais vidas em menos de 3 meses!',
     description:
-      "Their team is wonderful! I can't believe I didn't start working with them earlier.",
+      "A metodologia prática e a mentoria especializada foram transformadoras. Não acredito que não tenha começado antes!",
     buttonLabel: 'View Case Study',
     imgStart: 'start',
     img: require('../../images/profile.jpg'),
@@ -56,13 +60,13 @@ export const homeObjOne = {
     lightTopLine: true,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'Secure Database',
-    headline: 'All your data is stored on our secure server',
+    topLine: 'Suporte Personalizado',
+    headline: 'Conte com orientação especializada durante todo o curso',
     description:
-      'You will never have to worry about your information getting leaked. Our team of security experts will ensure your records are kept safe.',
-    buttonLabel: 'Sign Up Now',
+      'Você nunca estará sozinho nessa jornada! Nossa equipe de especialistas em ABA, Autismo, TDAH e Dislexia estará à disposição para tirar dúvidas, oferecer mentorias e garantir que você aplique todo o conhecimento na prática.',
+    buttonLabel: 'Comece agora!',
     imgStart: 'start',
-    img: require('../../images/svg-3.svg'),
+    img: img3,
     alt: 'Vault',
     start: 'true'
   };

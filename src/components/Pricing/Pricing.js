@@ -25,54 +25,56 @@ import {
     <IconContext.Provider value={{ color: '#a9b3c1', size: 64 }}>
       <PricingSection>
         <PricingWrapper>
-          <PricingHeading>Our Services</PricingHeading>
+          <PricingHeading>Serviços</PricingHeading>
           <PricingContainer>
+          <PricingCard to='/sign-up'>
+              <PricingCardInfo>
+                <PricingCardIcon>
+                  <GiCrystalBars />
+                </PricingCardIcon>
+                <PricingCardPlan>Mentoria em Grupo</PricingCardPlan>
+                <PricingCardCost>R$130,00</PricingCardCost>
+                <PricingCardLength>mensal</PricingCardLength>
+                <PricingCardFeatures>
+                  <PricingCardFeature>Sessões colaborativas</PricingCardFeature>
+                  <PricingCardFeature>Troca de experiências com outros profissionais</PricingCardFeature>
+                  <PricingCardFeature>Descontos em cursos e materiais</PricingCardFeature>
+                </PricingCardFeatures>
+                <Button primary>Escolher Plano</Button>
+              </PricingCardInfo>
+            </PricingCard>
+
             <PricingCard to='/sign-up'>
               <PricingCardInfo>
                 <PricingCardIcon>
                   <GiRock />
                 </PricingCardIcon>
-                <PricingCardPlan>Starter Pack</PricingCardPlan>
-                <PricingCardCost>$99.99</PricingCardCost>
-                <PricingCardLength>per month</PricingCardLength>
+                <PricingCardPlan>Mentoria Individual</PricingCardPlan>
+                <PricingCardCost>R$180,00</PricingCardCost>
+                <PricingCardLength>mensal</PricingCardLength>
                 <PricingCardFeatures>
-                  <PricingCardFeature>100 New Users</PricingCardFeature>
-                  <PricingCardFeature>$10,000 Budget</PricingCardFeature>
-                  <PricingCardFeature>Retargeting analytics</PricingCardFeature>
+                  <PricingCardFeature>Acompanhamento personalizado</PricingCardFeature>
+                  <PricingCardFeature>Planos de ação sob medida</PricingCardFeature>
+                  <PricingCardFeature>Feedback regulares para garantir seu progresso e desenvolvimento</PricingCardFeature>
                 </PricingCardFeatures>
-                <Button primary>Choose Plan</Button>
+                <Button primary>Escolher Plano</Button>
               </PricingCardInfo>
             </PricingCard>
-            <PricingCard to='/sign-up'>
-              <PricingCardInfo>
-                <PricingCardIcon>
-                  <GiCrystalBars />
-                </PricingCardIcon>
-                <PricingCardPlan>Gold Rush</PricingCardPlan>
-                <PricingCardCost>$299.99</PricingCardCost>
-                <PricingCardLength>per month</PricingCardLength>
-                <PricingCardFeatures>
-                  <PricingCardFeature>1000 New Users</PricingCardFeature>
-                  <PricingCardFeature>$50,000 Budget</PricingCardFeature>
-                  <PricingCardFeature>Lead Gen Analytics</PricingCardFeature>
-                </PricingCardFeatures>
-                <Button primary>Choose Plan</Button>
-              </PricingCardInfo>
-            </PricingCard>
+    
             <PricingCard to='/sign-up'>
               <PricingCardInfo>
                 <PricingCardIcon>
                   <GiCutDiamond />
                 </PricingCardIcon>
-                <PricingCardPlan>Diamond Kings</PricingCardPlan>
-                <PricingCardCost>$999.99</PricingCardCost>
-                <PricingCardLength>per month</PricingCardLength>
+                <PricingCardPlan>Pacote Completo</PricingCardPlan>
+                <PricingCardCost>R$250,00</PricingCardCost>
+                <PricingCardLength>mensal</PricingCardLength>
                 <PricingCardFeatures>
-                  <PricingCardFeature>Unlimited Users</PricingCardFeature>
-                  <PricingCardFeature>Unlimited Budget</PricingCardFeature>
-                  <PricingCardFeature>24/7 Support</PricingCardFeature>
+                  <PricingCardFeature>Mentoria individual e em grupo</PricingCardFeature>
+                  <PricingCardFeature>Acesso a materiais exclusivos</PricingCardFeature>
+                  <PricingCardFeature>Sessão de supervisão clínica (para aplicação prática dos conceitos)</PricingCardFeature>
                 </PricingCardFeatures>
-                <Button primary>Choose Plan</Button>
+                <Button primary>Escolher Plano</Button>
               </PricingCardInfo>
             </PricingCard>
           </PricingContainer>
