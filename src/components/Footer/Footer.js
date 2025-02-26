@@ -1,4 +1,5 @@
 import React from 'react';
+import logoNeuro from '../../images/logo_neuro.png';
 import { Button } from '../../globalStyles';
 import {
   FaFacebook,
@@ -82,10 +83,10 @@ function Footer() {
       <SocialMedia>
         <SocialMediaWrap>
           <SocialLogo to='/'>
-            <SocialIcon />
-            ULTRA
+            <SocialIcon src={logoNeuro} alt="Logo" />
+            anapsico
           </SocialLogo>
-          <WebsiteRights>ULTRA © {date.getFullYear()} </WebsiteRights>
+          <WebsiteRights>anapsico © {date.getFullYear()} </WebsiteRights>
           <SocialIcons>
             <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
               <FaFacebook />
