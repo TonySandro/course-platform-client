@@ -1,11 +1,11 @@
 import React from 'react';
-import { InfoSection } from '../../components';
+import { SignUpSection } from '../../components';
 import { homeObjOne } from './Data';
 
 function SignUp() {
   return (
     <>
-      <InfoSection {...homeObjOne} />
+      <SignUpSection  {...homeObjOne}/>
     </>
   );
 }
