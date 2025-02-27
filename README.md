@@ -1,2 +1,0 @@
-# course-platform-client
- 
