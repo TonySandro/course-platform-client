@@ -105,8 +105,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 If you have any questions or suggestions, feel free to reach out:
 
-- **Name**: [Your Name]
-- **Email**: your-email@example.com
-- **GitHub**: [your-username](https://github.com/your-username)
+- **Name**: Tony S. Duarte A.
+- **Email**: tonysduarte101@gmail.com
+- **GitHub**: [tonysandro](https://github.com/tonysandro)
 
 ---
