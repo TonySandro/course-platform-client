@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Container } from '../../globalStyles';
+import { Container } from '../../../globalStyles';
 
 export const CoursesSec = styled.section`
   padding: 2rem 0;
@@ -91,7 +91,7 @@ export const CourseCard = styled.div`
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.3); // 30% de opacidade preta
+  background: rgba(0, 0, 0, 0.3);
 }
 
 `;
