@@ -1,5 +1,5 @@
-export { default as Navbar } from './Navbar/Navbar';
-export { default as Footer } from './Footer/Footer';
-export { default as InfoSection } from './InfoSection/InfoSection';
-export { default as Pricing } from './Pricing/Pricing';
-export { default as SignUpSection } from './Signup/SignupSection';
+export { default as Navbar } from './HomePage/Navbar/Navbar';
+export { default as Footer } from './HomePage/Footer/Footer';
+export { default as InfoSection } from './HomePage/InfoSection/InfoSection';
+export { default as Pricing } from './HomePage/Pricing/Pricing';
+export { default as SignUpSection } from './HomePage/Signup/SignupSection';

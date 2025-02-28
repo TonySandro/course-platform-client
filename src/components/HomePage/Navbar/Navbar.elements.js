@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { Container } from '../../globalStyles'
-import logoNeuro from '../../images/logo_neuro.png';
+import { Container } from '../../../globalStyles'
+import logoNeuro from '../../../images/logo_neuro.png';
 import { Link } from 'react-router-dom'
 
 export const Nav = styled.nav`

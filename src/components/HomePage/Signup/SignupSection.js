@@ -9,10 +9,9 @@ import {
     FormInput,
     Button,
     Heading,
-} from './SignupSection.elements'; // Importando os componentes estilizados
+} from './SignupSection.elements'; 
 
 const SignupSection = ({ lightBg, lightText, primary }) => {
-    // Estados para armazenar os valores dos campos
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');

@@ -12,9 +12,9 @@ import { Nav,
  } from './Navbar.elements'
 import { FaTimes, FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib'
-import { Button } from '../../globalStyles';
+import { Button } from '../../../globalStyles';
 import { SocialIcon } from '../Footer/Footer.elements';
-import logoNeuro from '../../images/logo_neuro.png';
+import logoNeuro from '../../../images/logo_neuro.png';
 
 function Navbar() {
 

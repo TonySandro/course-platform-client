@@ -1,6 +1,6 @@
 import React from 'react';
-import logoNeuro from '../../images/logo_neuro.png';
-import { Button } from '../../globalStyles';
+import logoNeuro from '../../../images/logo_neuro.png';
+import { Button } from '../../../globalStyles';
 import {
   FaFacebook,
   FaInstagram,
