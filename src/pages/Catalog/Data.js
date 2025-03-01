@@ -4,7 +4,8 @@ export const CourseObject = {
     description: "Learn the fundamentals of JavaScript, the most popular programming language in web development.",
     price: 49.99,
     imageUrl: "https://miro.medium.com/v2/resize:fit:786/format:webp/1*LyZcwuLWv2FArOumCxobpA.png",
-    createdAt: "2023-01-01"
+    createdAt: "2023-01-01",
+    updateAt: "2023-01-01"
 };
 
 export const CourseObject1 = {
