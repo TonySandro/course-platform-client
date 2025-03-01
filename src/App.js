@@ -11,7 +11,7 @@ import Catalog from './pages/Catalog/Home';
 
 
 function App() {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(true);
   
   return (
       <Router>
