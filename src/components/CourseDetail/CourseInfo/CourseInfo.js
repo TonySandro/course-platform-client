@@ -7,7 +7,7 @@ import {
   CourseSubtitle,
   CourseInfo
 } from './CourseInfo.style';
-// import CoursePurchaseCard from '../CoursePurchaseCard/CoursePurchaseCard';
+import CoursePurchaseCard from '../CoursePurchaseCard/CoursePurchaseCard';
 
 const CourseInfos = ({ course }) => {
   return (
@@ -19,11 +19,11 @@ const CourseInfos = ({ course }) => {
           <CourseInfo>Última atualização em {course.updateAt}</CourseInfo>
         </CourseLeftColumn>
 
-        {/* <CoursePurchaseCard
-          previewImage={course.previewImage}
+        <CoursePurchaseCard
+          previewImage={course.imageUrl}
           price={course.price}
           discountInfo={course.discountInfo}
-        /> */}
+        />
       </CourseContainer>
     </CourseSection>
   );
