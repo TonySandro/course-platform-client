@@ -1,11 +1,13 @@
 import React from 'react';
 import CourseInfos from '../../components/CourseDetail/CourseInfo/CourseInfo';
-import { CourseObject } from '../Catalog/Data';
+import CourseContent from '../../components/CourseDetail/CourseContent/CourseContent';
+import { courseObject } from './Data';
 
 function CourseDetail() {
   return (
     <div>
-      <CourseInfos course={CourseObject} />
+      <CourseInfos course={courseObject} />
+      <CourseContent course={courseObject}/>
     </div>
   );
 }
