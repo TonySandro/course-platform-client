@@ -9,14 +9,12 @@ export const CoursesSec = styled.section`
 export const CoursesContainer = styled(Container)`
   display: flex;
   flex-direction: column;
-  position: relative;
 `;
 
 export const Title = styled.h1`
   font-size: 1.8rem;
   color: #212529;
-  margin-bottom: 1rem;
-  text-align: left; 
+  margin-bottom: 1.5rem;
 `;
 
 export const SliderWrapper = styled.div`
@@ -30,10 +28,13 @@ export const Slider = styled.div`
   gap: 1rem;
   overflow-x: auto;
   scroll-behavior: smooth;
+  padding-bottom: 0.5rem;
 
-  &::-webkit-scrollbar {
+    &::-webkit-scrollbar {
     display: none;
   }
+  
+  scrollbar-width: none;
 `;
 
 export const NavButton = styled.button`
@@ -47,7 +48,6 @@ export const NavButton = styled.button`
   width: 40px;
   height: 40px;
   border-radius: 50%;
-
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
   display: flex;

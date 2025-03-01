@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { Container } from '../../../globalStyles';
 
 export const AllCoursesSec = styled.section`
+  background-color: #fff;
   padding: 2rem 0;
-
 `;
 
 export const AllCoursesContainer = styled(Container)`
@@ -12,7 +12,7 @@ export const AllCoursesContainer = styled(Container)`
 `;
 
 export const CoursesTitle = styled.h2`
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #212529;
   margin-bottom: 1.5rem;
 `;
@@ -21,9 +21,8 @@ export const CoursesRow = styled.div`
   display: flex;
   gap: 1rem;
   overflow-x: auto;
-  margin-bottom: 1rem;
   scroll-behavior: smooth;
-
+  padding-bottom: 0.5rem;
 
   &::-webkit-scrollbar {
     display: none;
@@ -39,6 +38,12 @@ export const CourseCard = styled.div`
   border: 1px solid #ddd;
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
 `;
 
 export const CourseImage = styled.img`
@@ -61,16 +66,16 @@ export const CourseTitle = styled.h3`
   line-height: 1.2;
 `;
 
+export const CourseDescription = styled.p`
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+`;
+
 export const CoursePrice = styled.p`
   font-size: 1rem;
   color: #333;
   font-weight: bold;
   margin: 0.5rem 0;
-`;
-
-export const CourseDescription = styled.p`
-  font-size: 0.9rem;
-  color: #666;
-  margin: 0.5rem 0;
-  line-height: 1.3;
 `;

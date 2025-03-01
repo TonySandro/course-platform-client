@@ -16,7 +16,7 @@ const InitialNavBar = () => {
       <UserSection>
         <SearchBar>
           <FaSearch />
-          <input type="text" placeholder="Pesquisar por qualquer coisa" />
+          <input type="text" placeholder="Pesquisar" />
         </SearchBar>
         <span>Meu aprendizado</span>
         <CartIcon />

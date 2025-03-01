@@ -1,4 +1,3 @@
-// InitialNavBar.elements.js
 import styled from 'styled-components';
 import { FaShoppingCart } from 'react-icons/fa';
 
@@ -7,7 +6,7 @@ export const NavBar = styled.nav`
   align-items: center;
   justify-content: space-between;
   background-color: #101522;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 `;
 
@@ -19,11 +18,26 @@ export const Logo = styled.div`
   align-items: center;
 `;
 
+export const UserSection = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  span {
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+`;
+
 export const SearchBar = styled.div`
   flex: 0 0 auto;
-  width: 200px;
+  width: 250px;
   position: relative;
-  margin-left: 1rem;
 
   input {
     width: 100%;
@@ -46,22 +60,6 @@ export const SearchBar = styled.div`
 
   input::placeholder {
     color: #888;
-  }
-`;
-
-export const UserSection = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-
-  span {
-    font-size: 1rem;
-    color: #fff;
-    cursor: pointer;
-
-    &:hover {
-      text-decoration: underline;
-    }
   }
 `;
 
