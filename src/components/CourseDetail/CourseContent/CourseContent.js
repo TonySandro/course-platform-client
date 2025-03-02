@@ -2,11 +2,11 @@ import React from 'react';
 import {
   ContentSection,
   ContentContainer,
-  LearningGrid,
-  InfoBlock,
+  LearningWrapper,
   BlockTitle,
-  List,
-  ListItem,
+  LearnListGrid,
+  LearnListItem,
+  CheckIcon,
   CourseCurriculumBlock,
   CurriculumTitle,
   CurriculumDescription,
@@ -17,33 +17,26 @@ const CourseContent = ({ course }) => {
   return (
     <ContentSection>
       <ContentContainer>
-        {/* O que você aprenderá & Este curso inclui */}
-        <LearningGrid>
-          <InfoBlock>
-            <BlockTitle>O que você aprenderá</BlockTitle>
-            <List>
-              {course.whatYouWillLearn.map((item, idx) => (
-                <ListItem key={idx}>{item}</ListItem>
-              ))}
-            </List>
-          </InfoBlock>
 
-          <InfoBlock>
-            <BlockTitle>Este curso inclui</BlockTitle>
-            <List>
-              {course.includes.map((inc, idx) => (
-                <ListItem key={idx}>{inc}</ListItem>
-              ))}
-            </List>
-          </InfoBlock>
-        </LearningGrid>
+        {/* Box: O que você aprenderá */}
+        <LearningWrapper>
+          <BlockTitle>O que você aprenderá</BlockTitle>
+          <LearnListGrid>
+            {course.whatYouWillLearn.map((item, idx) => (
+              <LearnListItem key={idx}>
+                <CheckIcon />
+                {item}
+              </LearnListItem>
+            ))}
+          </LearnListGrid>
+        </LearningWrapper>
 
-        {/* Conteúdo do curso */}
         <CourseCurriculumBlock>
           <CurriculumTitle>Conteúdo do curso</CurriculumTitle>
           <CurriculumDescription>{course.curriculum}</CurriculumDescription>
           <ExpandLink href="#expand-all">Expandir todas as seções</ExpandLink>
         </CourseCurriculumBlock>
+
       </ContentContainer>
     </ContentSection>
   );

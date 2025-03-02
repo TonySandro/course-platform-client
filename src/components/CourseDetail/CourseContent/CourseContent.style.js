@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Container } from '../../../globalStyles';
+import { FaCheck } from 'react-icons/fa';
 
 export const ContentSection = styled.section`
   background-color: #fff;
@@ -13,20 +14,18 @@ export const ContentContainer = styled(Container)`
   gap: 2rem;
 `;
 
-/* Agrupamento "O que você aprenderá" e "Este curso inclui" */
-export const LearningGrid = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+export const LearningWrapper = styled.div`
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 1.5rem;
 
-  @media (min-width: 992px) {
-    flex-direction: row;
-    gap: 3rem;
+  width: 70%;
+  max-width: 700px;
+
+  @media (max-width: 992px) {
+    width: 100%;
+    max-width: 100%;
   }
-`;
-
-export const InfoBlock = styled.div`
-  flex: 1;
 `;
 
 export const BlockTitle = styled.h3`
@@ -35,28 +34,32 @@ export const BlockTitle = styled.h3`
   color: #212529;
 `;
 
-export const List = styled.ul`
+export const LearnListGrid = styled.ul`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 2rem;
   list-style: none;
   padding-left: 0;
-`;
+  margin: 0;
 
-export const ListItem = styled.li`
-  font-size: 0.95rem;
-  margin-bottom: 0.5rem;
-  position: relative;
-  padding-left: 1.5rem;
-
-  &::before {
-    content: "•"; 
-    color: #6c757d;
-    position: absolute;
-    left: 0;
-    font-size: 1.2rem;
-    line-height: 1;
+  @media (max-width: 576px) {
+    grid-template-columns: 1fr;
   }
 `;
 
-/* Bloco para "Conteúdo do curso" */
+export const CheckIcon = styled(FaCheck)`
+  color: #0f766e; 
+  margin-right: 0.5rem;
+`;
+
+export const LearnListItem = styled.li`
+  display: flex;
+  align-items: flex-start;
+  font-size: 0.95rem;
+  color: #212529;
+  margin-bottom: 0.5rem;
+`;
+
 export const CourseCurriculumBlock = styled.div`
   flex: 1;
 `;
@@ -72,7 +75,6 @@ export const CurriculumDescription = styled.p`
   color: #666;
 `;
 
-/* Link "Expandir todas as seções" */
 export const ExpandLink = styled.a`
   font-size: 0.9rem;
   color: #007bff;
