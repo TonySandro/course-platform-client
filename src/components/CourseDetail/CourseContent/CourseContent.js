@@ -6,11 +6,7 @@ import {
   BlockTitle,
   LearnListGrid,
   LearnListItem,
-  CheckIcon,
-  CourseCurriculumBlock,
-  CurriculumTitle,
-  CurriculumDescription,
-  ExpandLink
+  CheckIcon
 } from './CourseContent.style';
 
 const CourseContent = ({ course }) => {
@@ -18,7 +14,6 @@ const CourseContent = ({ course }) => {
     <ContentSection>
       <ContentContainer>
 
-        {/* Box: O que você aprenderá */}
         <LearningWrapper>
           <BlockTitle>O que você aprenderá</BlockTitle>
           <LearnListGrid>
@@ -30,12 +25,6 @@ const CourseContent = ({ course }) => {
             ))}
           </LearnListGrid>
         </LearningWrapper>
-
-        <CourseCurriculumBlock>
-          <CurriculumTitle>Conteúdo do curso</CurriculumTitle>
-          <CurriculumDescription>{course.curriculum}</CurriculumDescription>
-          <ExpandLink href="#expand-all">Expandir todas as seções</ExpandLink>
-        </CourseCurriculumBlock>
 
       </ContentContainer>
     </ContentSection>

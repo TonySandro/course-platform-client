@@ -59,29 +59,3 @@ export const LearnListItem = styled.li`
   color: #212529;
   margin-bottom: 0.5rem;
 `;
-
-export const CourseCurriculumBlock = styled.div`
-  flex: 1;
-`;
-
-export const CurriculumTitle = styled.h3`
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-`;
-
-export const CurriculumDescription = styled.p`
-  font-size: 0.95rem;
-  margin-bottom: 1rem;
-  color: #666;
-`;
-
-export const ExpandLink = styled.a`
-  font-size: 0.9rem;
-  color: #007bff;
-  text-decoration: none;
-  cursor: pointer;
-
-  &:hover {
-    text-decoration: underline;
-  }
-`;
