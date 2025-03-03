@@ -1,3 +1,10 @@
+export const CourseData = {
+    title: "Aprenda Go (Golang) do zero ao avançado 100% na prática e com suporte!",
+    totalLessons: 261,
+    totalHours: 85,
+    lastUpdate: "junho de 2024",
+}
+
 export const sections = [
     {
         title: "Seção 1: Começando sua jornada",
@@ -59,7 +66,7 @@ export const sections = [
         totalDuration: "5m",
         lessons: [
             { id: 22, number: 1, title: "Encerramento", completed: false, duration: "5m" },
-            
+
         ]
     },
 
