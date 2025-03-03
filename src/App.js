@@ -9,6 +9,7 @@ import ScrollToTop from './components/ScrollToTop';
 import InitialNavBar from './components/InitialNavBar/InitialNavBar';
 import Catalog from './pages/Catalog/Home';
 import CourseDetail from './pages/CourseDetail/Home';
+import CoursePlayer from './pages/CoursePlayer/Home';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Route path='/sign-up' component={SignUp} />
             <Route path='/catalog' component={Catalog} />
             <Route path='/coursedetail' component={CourseDetail} />
+            <Route path='/courseplayer' component={CoursePlayer} />
           </Switch>
           {/* <Footer /> */}
       </Router>    
