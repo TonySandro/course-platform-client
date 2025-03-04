@@ -19,8 +19,8 @@ function App() {
       <Router>
           <GlobalStyles />
           <ScrollToTop />
-          {!isAuthenticated && <Navbar />}
-          {isAuthenticated && <InitialNavBar />}
+          {/* {!isAuthenticated && <Navbar />}
+          {isAuthenticated && <InitialNavBar />} */}
           {/* <Navbar /> */}
           <Switch>
             <Route path='/' exact component={Home} />
