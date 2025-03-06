@@ -16,7 +16,7 @@ const AllCourses = ({ courses = [] }) => {
   return (
     <AllCoursesSec>
       <AllCoursesContainer>
-        <CoursesTitle>O que aprender em seguida</CoursesTitle>
+        <CoursesTitle>Cursos disponiveis</CoursesTitle>
         
         <CoursesRow>
           {courses.map((course) => (

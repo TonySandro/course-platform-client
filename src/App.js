@@ -23,12 +23,12 @@ function App() {
           {isAuthenticated && <InitialNavBar />} */}
           {/* <Navbar /> */}
           <Switch>
-            <Route path='/' exact component={Home} />
-            <Route path='/services' component={Services} />
-            <Route path='/sign-up' component={SignUp} />
-            <Route path='/catalog' component={Catalog} />
+            <Route path='/' component={Catalog} />
             <Route path='/coursedetail' component={CourseDetail} />
             <Route path='/courseplayer' component={CoursePlayer} />
+            <Route path='/sign-up' component={SignUp} />
+            <Route path='/mentoria' exact component={Home} />
+            <Route path='/services' component={Services} />
           </Switch>
           {/* <Footer /> */}
       </Router>    
