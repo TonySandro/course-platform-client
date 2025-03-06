@@ -1,5 +1,8 @@
 import React from 'react';
 import {
+  BannerSection,
+  BannerContainer,
+  BannerImage,
   InitialSectionSec,
   InitialSectionContainer,
   ProfileIcon,
@@ -8,7 +11,20 @@ import {
   RoleText
 } from './initialSection.elements';
 
-const InitialSection = () => {
+const InitialSection = ({ isAuthenticated, bannerImage }) => {
+  if (!isAuthenticated) {
+    return (
+      <BannerSection>
+        <BannerContainer>
+          <BannerImage
+            src={bannerImage}
+            alt="Banner de acesso"
+          />
+        </BannerContainer>
+      </BannerSection>
+    );
+  }
+
   return (
     <InitialSectionSec>
       <InitialSectionContainer>

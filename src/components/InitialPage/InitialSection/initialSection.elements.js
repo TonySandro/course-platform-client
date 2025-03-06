@@ -1,9 +1,29 @@
 import styled from 'styled-components';
 import { Container } from '../../../globalStyles';
+ 
+export const BannerSection = styled.section`
+  background-color: #fff;
+  padding: 1rem 0;  
+`;
+
+export const BannerContainer = styled(Container)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+`;
+
+export const BannerImage = styled.img`
+  width: 100%;
+  max-width: 1000px; 
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+`;
 
 export const InitialSectionSec = styled.section`
   background-color: #f8f9fa;
-  padding: 2rem 0;
+  padding: 1rem 0; 
 `;
 
 export const InitialSectionContainer = styled(Container)`
@@ -40,5 +60,5 @@ export const WelcomeText = styled.h1`
 export const RoleText = styled.p`
   font-size: 1rem;
   color: #6c757d;
-  margin: 0.25rem 0 0;
+  margin: 0.25rem 0 0 0;
 `;
