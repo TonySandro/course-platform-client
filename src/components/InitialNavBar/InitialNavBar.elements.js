@@ -2,28 +2,40 @@ import styled from 'styled-components';
 import { FaShoppingCart } from 'react-icons/fa';
 
 export const NavBar = styled.nav`
-  display: flex;
-  align-items: center;
+  position: sticky;
+  top: 0;
+  display: flex; 
   justify-content: space-between;
-  background-color: #101522;
-  padding: 0.75rem 1.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #faf3e0;
+  padding: 0 2rem;
+  height: 70px;
+  overflow: visible;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 `;
 
-export const Logo = styled.div`
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #fff;
+export const NavBarx = styled.nav`
+  position: relative;
+  z-index: 999;      
+  overflow: visible; 
+  background-color: #faf3e0;
+  height: 60px;
+  padding: 0 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+`;
+
+export const LogoContainer = styled.div`
   display: flex;
   align-items: center;
+`;
+
+export const LogoImage = styled.img`
+  height: 180px;  
 `;
 
 export const SearchBar = styled.div`
   flex: 0 0 auto;
-  width: 350px;
+  width: 250px;
   position: relative;
-  margin-left: auto;
-  padding-right: 1rem;
 
   input {
     width: 100%;
@@ -48,6 +60,12 @@ export const SearchBar = styled.div`
   }
 `;
 
+export const RightContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+`;
+
 export const UserSection = styled.div`
   display: flex;
   align-items: center;
@@ -55,7 +73,7 @@ export const UserSection = styled.div`
 
   span {
     font-size: 0.9rem;
-    color: #fff;
+    color: #212529;
     cursor: pointer;
     &:hover {
       text-decoration: underline;
@@ -65,10 +83,10 @@ export const UserSection = styled.div`
 
 export const CartIcon = styled(FaShoppingCart)`
   font-size: 1.25rem;
-  color: #fff;
+  color: #212529;
   cursor: pointer;
   &:hover {
-    color: #ddd;
+    color: #000;
   }
 `;
 
@@ -83,7 +101,6 @@ export const ProfileIcon = styled.div`
   border-radius: 50%;
   font-weight: bold;
   font-size: 0.875rem;
-  position: relative;
   cursor: pointer;
   &:hover {
     opacity: 0.8;
@@ -109,7 +126,7 @@ export const LoginButton = styled.button`
 `;
 
 export const SignUpButton = styled.button`
-  background: linear-gradient(135deg, #6c63ff, #5750d0);
+  background: linear-gradient(135deg, #6c63ff, #5750d3);
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -120,7 +137,7 @@ export const SignUpButton = styled.button`
   transition: all 0.3s ease;
 
   &:hover {
-    background: linear-gradient(135deg, #5750d0, #4d47b8);
+    background: linear-gradient(135deg, #5750d3, #4d47b8);
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   }

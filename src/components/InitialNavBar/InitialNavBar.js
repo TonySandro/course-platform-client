@@ -2,41 +2,44 @@ import React from 'react';
 import { FaSearch } from 'react-icons/fa';
 import {
   NavBar,
-  Logo,
+  LogoContainer,
+  LogoImage,
   SearchBar,
+  RightContainer,
   UserSection,
   CartIcon,
   ProfileIcon,
   LoginButton,
   SignUpButton
 } from './InitialNavBar.elements';
+import img from '../../images/logo_retangular.png';
 
 const InitialNavBar = ({ isAuthenticated }) => {
   return (
     <NavBar>
-      <Logo>AnaPsico</Logo>
+      <LogoContainer>
+        <LogoImage src={img} alt="Logo do Projeto" />
+      </LogoContainer>
 
-      <SearchBar>
-        <FaSearch />
-        <input type="text" placeholder="Pesquisar por qualquer coisa" />
-      </SearchBar>
+      <RightContainer>
+        <SearchBar>
+          <FaSearch />
+          <input type="text" placeholder="Pesquisar" />
+        </SearchBar>
 
-      <UserSection>
-        {isAuthenticated && (
-          <>
+        {isAuthenticated ? (
+          <UserSection>
             <span>Meu aprendizado</span>
             <CartIcon />
             <ProfileIcon>TS</ProfileIcon>
-          </>
-        )}
-
-        {!isAuthenticated && (
+          </UserSection>
+        ) : (
           <>
             <LoginButton>Fazer login</LoginButton>
             <SignUpButton>Cadastre-se</SignUpButton>
           </>
         )}
-      </UserSection>
+      </RightContainer>
     </NavBar>
   );
 };
