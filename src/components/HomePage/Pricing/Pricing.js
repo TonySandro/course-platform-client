@@ -18,7 +18,7 @@ import {
   PricingCardLength,
   PricingCardFeatures,
   PricingCardFeature
-} from './Pricing.elements';
+} from './Pricing.style';
 
  const Pricing = () => {
   return (

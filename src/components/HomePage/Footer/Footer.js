@@ -27,7 +27,7 @@ import {
   WebsiteRights,
   SocialIcons,
   SocialIconLink
-} from './Footer.elements';
+} from './Footer.style';
 
 function Footer() {
 

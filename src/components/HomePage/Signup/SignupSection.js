@@ -9,7 +9,7 @@ import {
     FormInput,
     Button,
     Heading,
-} from './SignupSection.elements'; 
+} from './SignupSection.style'; 
 
 const SignupSection = ({ lightBg, lightText, primary }) => {
     const [name, setName] = useState('');

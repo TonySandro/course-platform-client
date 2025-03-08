@@ -9,11 +9,11 @@ import { Nav,
     NavLinks,
     NavItemBtn,
     NavBtnLink
- } from './Navbar.elements'
+ } from './Navbar.style'
 import { FaTimes, FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib'
 import { Button } from '../../../globalStyles';
-import { SocialIcon } from '../Footer/Footer.elements';
+import { SocialIcon } from '../Footer/Footer.style';
 import logoImg from '../../../images/logo_retangular.png';
 
 function Navbar() {
