@@ -13,6 +13,7 @@ import {
   SignUpButton
 } from './InitialNavBar.elements';
 import img from '../../images/logo_retangular.png';
+import { Link } from 'react-router-dom'
 
 const InitialNavBar = ({ isAuthenticated }) => {
   return (
@@ -35,8 +36,12 @@ const InitialNavBar = ({ isAuthenticated }) => {
           </UserSection>
         ) : (
           <>
+          <Link to='/login'> 
             <LoginButton>Fazer login</LoginButton>
+          </Link>
+          <Link to='/sign-up'> 
             <SignUpButton>Cadastre-se</SignUpButton>
+          </Link>
           </>
         )}
       </RightContainer>
