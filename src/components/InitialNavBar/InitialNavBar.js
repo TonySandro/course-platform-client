@@ -12,14 +12,14 @@ import {
   LoginButton,
   SignUpButton
 } from './InitialNavBar.elements';
-import img from '../../images/logo_retangular.png';
+import logoImg from '../../images/logo_retangular.png';
 import { Link } from 'react-router-dom'
 
 const InitialNavBar = ({ isAuthenticated }) => {
   return (
     <NavBar>
       <LogoContainer>
-        <LogoImage src={img} alt="Logo do Projeto" />
+        <LogoImage src={logoImg} alt="logo" />
       </LogoContainer>
 
       <RightContainer>

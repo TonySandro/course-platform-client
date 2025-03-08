@@ -14,7 +14,7 @@ import { FaTimes, FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib'
 import { Button } from '../../../globalStyles';
 import { SocialIcon } from '../Footer/Footer.elements';
-import logoNeuro from '../../../images/logo_neuro.png';
+import logoImg from '../../../images/logo_retangular.png';
 
 function Navbar() {
 
@@ -61,8 +61,7 @@ function Navbar() {
             <Nav>
                 <NavbarContainer>
                     <NavLogo to='/'> 
-                        <NavIcon src={logoNeuro} alt="Logo"/>
-                        anapsico
+                        <NavIcon ssrc={logoImg} alt="logo"/>
                     </NavLogo>
                     <HamburgerIcon onClick={handleClick}>
                         {click ? <FaTimes /> : <FaBars />}

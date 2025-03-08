@@ -1,22 +1,23 @@
 import React from 'react';
 import { FaChevronDown } from 'react-icons/fa';
+import logoImg from '../../../images/logo_retangular.png';
 import {
   NavbarContainer,
-  Logo,
   CourseTitle,
   ProgressContainer,
+  LogoContainer,
+  LogoImage,
 } from './PlayerNavbar.style';
 
 const PlayerNavbar = ({ courseTitle = 'Título do Curso' }) => {
   return (
     <NavbarContainer>
-      {/* Nome do site / Logo */}
-      <Logo>AnaPsico</Logo>
+      <LogoContainer>
+        <LogoImage src={logoImg} alt="logo" />
+      </LogoContainer>
 
-      {/* Título do curso */}
       <CourseTitle>{courseTitle}</CourseTitle>
 
-      {/* Botão de progresso */}
       <ProgressContainer>
         Seu progresso <FaChevronDown size={12} />
       </ProgressContainer>
