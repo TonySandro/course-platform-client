@@ -10,6 +10,7 @@ import InitialNavBar from './components/InitialNavBar/InitialNavBar';
 import Catalog from './pages/Catalog/Home';
 import CourseDetail from './pages/CourseDetail/Home';
 import CoursePlayer from './pages/CoursePlayer/Home';
+import LoginPage from './pages/login/login-page';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           {isAuthenticated && <InitialNavBar />} */}
           {/* <Navbar /> */}
           <Switch>
+            <Route path='/login' component={LoginPage} />
             <Route path='/coursedetail' component={CourseDetail} />
             <Route path='/courseplayer' component={CoursePlayer} />
             <Route path='/sign-up' component={SignUp} />
