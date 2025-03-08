@@ -10,7 +10,7 @@ import {
   CourseTitle,
   CoursePrice,
   CourseDescription,
-} from './AllCourses.elements';
+} from './AllCourses.style';
 
 const AllCourses = ({ courses = [] }) => {
   return (

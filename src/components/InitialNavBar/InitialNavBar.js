@@ -11,7 +11,7 @@ import {
   ProfileIcon,
   LoginButton,
   SignUpButton
-} from './InitialNavBar.elements';
+} from './InitialNavBar.style';
 import logoImg from '../../images/logo_retangular.png';
 import { Link } from 'react-router-dom'
 

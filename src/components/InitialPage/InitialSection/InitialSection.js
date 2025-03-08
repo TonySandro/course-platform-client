@@ -9,7 +9,7 @@ import {
   TextWrapper,
   WelcomeText,
   RoleText
-} from './initialSection.elements';
+} from './initialSection.style';
 
 const InitialSection = ({ isAuthenticated, bannerImage }) => {
   if (!isAuthenticated) {

@@ -12,7 +12,7 @@ import {
   CardFooter,
   CardTitle,
   CardSubtitle
-} from './YourCourses.elements';
+} from './YourCourses.style';
 
 const PlayIcon = () => <i className="fas fa-play-circle"></i>;
 

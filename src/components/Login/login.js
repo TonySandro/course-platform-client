@@ -13,7 +13,7 @@ import {
   LoginButton,
   BottomText,
   RegisterLink
-} from './login-style';
+} from './Login.style';
 import image from '../../images/svg-3.svg';
 
 const LoginComponent = () => {
