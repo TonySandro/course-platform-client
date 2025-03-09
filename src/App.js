@@ -11,6 +11,7 @@ import Catalog from './pages/Catalog/Home';
 import CourseDetail from './pages/CourseDetail/Home';
 import CoursePlayer from './pages/CoursePlayer/Home';
 import LoginPage from './pages/login/login-page';
+import Cart from './pages/Cart/Cart';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           {isAuthenticated && <InitialNavBar />} */}
           {/* <Navbar /> */}
           <Switch>
+            <Route path='/cart' component={Cart} />
             <Route path='/login' component={LoginPage} />
             <Route path='/coursedetail' component={CourseDetail} />
             <Route path='/courseplayer' component={CoursePlayer} />
